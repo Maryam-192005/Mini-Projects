@@ -1,0 +1,84 @@
+nav {
+    background-color: navy;
+    padding: 20px;
+  }
+  nav h2 a {
+    border: 5px solid;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 600px;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+  }
+
+  nav h2 :hover {
+    background-color: indianred;
+    transition: 0.6s;
+  }
+  nav h3 {
+    text-decoration: underline;
+    font-size: 30px;
+    color: white;
+  }
+
+  .paragraph {
+    width: 450px;
+  }
+  .second {
+    width: 450px;
+  }
+  .service {
+    float: left;
+    border: 5px solid;
+    width: fit-content;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    
+  }
+
+  .first {
+  border: 5px solid;
+    
+    width: fit-content;
+    padding: 10px;
+    float: right;
+    margin-bottom: 50px;
+    background-color: navy;
+    color: white;
+    
+  }
+  body {
+    background-color: gray;
+  }
+  .week7 {
+    border: 5px solid;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: navy;
+    color: white;
+    
+  }
+  .fourth {
+    border: 5px solid;
+    width: fit-content;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+  }
+  .fifth {
+    border: 5px solid;
+    width: 30%;
+    padding: 10px;
+    float: right;
+    background-color: navy;
+    color: white;
+  }
+  h1{
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+  }

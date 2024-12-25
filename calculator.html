@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .display {
+            width: 100%;
+            height: 50px;
+            font-size: 2rem;
+            text-align: right;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .buttons button {
+            padding: 20px;
+            font-size: 1.5rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly />
+        <div class="buttons">
+            <button onclick="showScreen('1')">1</button>
+            <button onclick="showScreen('2')">2</button>
+            <button onclick="showScreen('3')">3</button>
+            <button onclick="setOperator('+')">+</button>
+
+            <button onclick="showScreen('4')">4</button>
+            <button onclick="showScreen('5')">5</button>
+            <button onclick="showScreen('6')">6</button>
+            <button onclick="setOperator('-')">-</button>
+
+            <button onclick="showScreen('7')">7</button>
+            <button onclick="showScreen('8')">8</button>
+            <button onclick="showScreen('9')">9</button>
+            <button onclick="setOperator('*')">*</button>
+
+            <button onclick="clearScreen()">C</button>
+            <button onclick="showScreen('0')">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="setOperator('/')">/</button>
+        </div>
+    </div>
+
+    <script>
+        let number = document.getElementById("display");
+        let firstNum = "";
+        let secondNum = "";
+        let operator = "";
+        let result = "";
+
+        function showScreen(num) {
+            number.value = number.value + num;
+        }
+
+        function clearScreen() {
+            number.value = "";
+        }
+
+        function setOperator(operation) {
+            if (number.value != "") {
+                firstNum = number.value;
+                operator = operation;
+                number.value = number.value + operator;
+            }
+        }
+
+        function calculate() {
+            secondNum = parseFloat(number.value);
+            firstNum = parseFloat(firstNum);
+
+            if ((firstNum != "" && secondNum != "", operator != "")) {
+                if (operator == "+") {
+                    result = firstNum + secondNum;
+                } else if (operator == "-") {
+                    result = firstNum - secondNum;
+                } else if (operator == "*") {
+                    result = firstNum * secondNum;
+                } else if (operator == "/") {
+                    result = firstNum / secondNum;
+                }
+
+                number.value = result;
+            }
+        }
+
+        // let show = document.getElementById("display");
+        // let firstNum = "";
+        // let secondNum = "";
+        // let operatorion = "";
+        // let result = "";
+
+        // function screenDisplay(number) {
+        //     show.value = show.value + number;
+
+        // }
+
+        // function clearDisplay() {
+        //     show.value = "";
+        //     firstNum = '';
+        //     operatorion = '';
+        //     secondNum = '';
+        // }
+
+        // function setOperator(operator) {
+        //     if (show.value != "") {
+        //         firstNum = show.value;
+        //         operatorion = operator;
+        //         show.value = '';
+        //     }
+        // }
+
+        // function calculate() {
+        //     if (firstNum != "" && operatorion != "") {
+        //         firstNum = parseFloat(firstNum);
+        //         secondNum = show.value;
+        //         secondNum = parseFloat(secondNum);
+
+        //         if (operatorion == "+") {
+        //             result = firstNum + secondNum;
+        //         } else if (operatorion == "-") {
+        //             result = firstNum - secondNum;
+        //         } else if (operatorion == "*") {
+        //             result = firstNum * secondNum;
+        //         } else if (operatorion == "/") {
+        //             result = firstNum / secondNum;
+        //         }
+
+        //         show.value = result;
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

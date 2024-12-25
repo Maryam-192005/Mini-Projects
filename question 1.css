@@ -1,0 +1,71 @@
+.form {
+  margin: 200px;
+  align-items: center;
+
+  
+}
+.Name {
+  padding: 40px;
+  text-align: justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+  color: white;
+  
+
+  
+}
+#field {
+  padding: 150px;
+  width: fit-content;
+  margin-left: 25%;
+  border-radius: 20px;
+  border-color: black;
+background-color:navy;
+
+  
+  
+  
+
+}
+.Input {
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  border: 5px solid;
+  
+  
+}
+
+#heading{
+    text-align: center;
+    
+
+    color: white;
+    width: fit-content;
+    margin-left: 50px;
+    margin-bottom: 70px;
+    text-decoration: underline;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    font-size: 60px;
+}
+.Button{
+padding: 10px;
+border-radius:5px ;
+background-color:white;
+color: black;
+
+}
+.Button:hover{
+    background-color: indianred;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+body{
+  background-color: lightgrey;
+}
+
+

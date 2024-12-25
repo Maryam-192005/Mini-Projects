@@ -1,0 +1,180 @@
+/* body {
+  background-color: #f5f5f5;
+  color: #333333;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #004d40;
+  color: #ffffff;
+}
+
+h1, h2 {
+  color: #ffd700;
+}
+
+a {
+  color: #50c878;
+}
+
+a:hover {
+  color: #d32f2f;
+} */
+
+/* .heading {
+  color: #004d40;
+}
+
+.paragraph {
+  color: #333333;
+}
+body {
+  background-color: #fffacd;
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #dc143c;
+  color: #ffffff;
+}
+
+h1, h2 {
+  color: #ff8c00;
+}
+
+a {
+  color: #40e0d0;
+}
+
+a:hover {
+  color: #007fff;
+}
+
+.heading {
+  color: #dc143c;
+}
+
+.paragraph {
+  color: #000000;
+}
+
+button {
+  background-color: #007fff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+} */
+/* General Styles */
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: #4169e1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4500;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #002366;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border: 5px solid #002366;
+  border-radius: 10px;
+}
+
+/* Content Sections */
+.heading {
+  color: #002366;
+  margin: 20px 0 10px 0;
+  text-align: center;
+}
+
+.paragraph {
+  color: #333333;
+  margin: 0 20px;
+  text-align: justify;
+}
+
+.achievements {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.achievement-list {
+  list-style-type: square;
+  margin: 0 40px;
+  padding: 0;
+}
+
+.achievement-list li {
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #002366;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #ffd700;
+}
+
+.footer a:hover {
+  color: #ff4500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .hero-image {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .paragraph {
+    margin: 0 10px;
+  }
+
+  .achievement-list {
+    margin: 0 20px;
+  }
+}
